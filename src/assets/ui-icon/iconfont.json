@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "35162754",
+      "name": "copy复制2",
+      "font_class": "copyfuzhi2",
+      "unicode": "e84c",
+      "unicode_decimal": 59468
+    },
+    {
+      "icon_id": "35162758",
+      "name": "download-two下载3",
+      "font_class": "download-twoxiazai3",
+      "unicode": "e84d",
+      "unicode_decimal": 59469
+    },
+    {
+      "icon_id": "35162761",
+      "name": "delete删除",
+      "font_class": "deleteshanchu",
+      "unicode": "e84e",
+      "unicode_decimal": 59470
+    },
+    {
+      "icon_id": "35165312",
+      "name": "edit-two编辑2",
+      "font_class": "edit-twobianji2",
+      "unicode": "e850",
+      "unicode_decimal": 59472
+    },
+    {
+      "icon_id": "35165314",
+      "name": "excel",
+      "font_class": "excel",
+      "unicode": "e851",
+      "unicode_decimal": 59473
+    },
+    {
+      "icon_id": "35165322",
+      "name": "file-correct文件-正确",
+      "font_class": "file-correctwenjian-zhengque",
+      "unicode": "e852",
+      "unicode_decimal": 59474
+    }
+  ]
+}
