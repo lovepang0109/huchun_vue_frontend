@@ -282,9 +282,9 @@ export default{
           const yest = this.GetDashData?.yesterdayCountries;
           const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
-          this.total_country_Mensajes[Mensajes] += item.Mensajes;
-          this.total_country_Mensajes[PromedioMes] += averageMonth.toLocaleString('en-US');
-          this.total_country_Mensajes[MensajesMes] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
+          this.total_country_Mensajes["Mensajes"] += item.Mensajes;
+          this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
+          this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
       });
 
       return this.total_country_Mensajes;
