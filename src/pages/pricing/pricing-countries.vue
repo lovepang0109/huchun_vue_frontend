@@ -8,7 +8,7 @@
                       class="elevation-1 px-4 py-2"
                       :headers="headers" 
                       :items="connectionData" 
-                      style="min-height: 450px; font-size: 10pt;width:160%;"
+                      style="min-height: 450px; font-size: 10pt;"
                       :sort-by="[{ key: 'calories', order: 'asc' }]" >
           <template v-slot:top>
             <VRow class="align-center">
@@ -258,6 +258,11 @@ export default {
 
 .flag_country{
     text-align: left;
+}
+
+
+.v-table__wrapper table{
+  width:160%;
 }
 
 </style>
