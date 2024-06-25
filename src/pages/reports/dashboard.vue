@@ -132,7 +132,7 @@
 
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{total_country_Mensajes.Mensajes}}</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages()}}</th>
                     <th scope="col" class="text-center">ssss</th>
                     <th scope="col" class="text-center">ssss</th>                
                   </tr>
@@ -283,6 +283,28 @@ export default{
       });
     },
 
+  getTotalCountriMessages: function(){
+        this.GetDashData?.countries?.map( (item) => {
+          const today = new Date();
+          const yest = this.GetDashData?.yesterdayCountries;
+          const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
+        
+          this.total_country_Mensajes.Mensajes += item.Mensajes;
+      console.log( this.total_country_Mensajes.Mensajes);
+
+          // this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
+          // this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
+      });
+
+      console.log( this.total_country_Mensajes.Mensajes);
+
+      //  return {
+          
+      //     "Mensajes" : this.total_country_Mensajes["Mensajes"],
+      //     // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
+      //     // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
+      //   }
+    },
    
 
     getChartLabels: function(){
@@ -351,32 +373,10 @@ export default{
   },
   mounted() {
     this.fetchDashData();
-    this.getTotalCountriMessages();
   },  
   methods: {
     ...mapActions(['fetchDashData', ]),    
-     getTotalCountriMessages(){
-        this.GetDashData?.countries?.map( (item) => {
-          const today = new Date();
-          const yest = this.GetDashData?.yesterdayCountries;
-          const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
-        
-          this.total_country_Mensajes.Mensajes += item.Mensajes;
-      console.log( this.total_country_Mensajes.Mensajes);
-
-          // this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
-          // this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
-      });
-
-      console.log( this.total_country_Mensajes.Mensajes);
-
-      //  return {
-          
-      //     "Mensajes" : this.total_country_Mensajes["Mensajes"],
-      //     // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
-      //     // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
-      //   }
-    },
+     
   },
   watch: {    
 
