@@ -130,6 +130,15 @@
                     <td>{{ item.MensajesMes }}</td>
                   </tr>
                 </tbody>
+                <thead class="text-center">
+                  <tr>
+                    <th scope="col" class="text-center">Country</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages()}}</th>
+                    <th scope="col" class="text-center">Promedio Mes</th>
+                    <th scope="col" class="text-center">Mensajes Mes</th>                
+                  </tr>
+                </thead>
+                
               </VTable> 
             </VCol>
 
@@ -217,7 +226,8 @@ export default{
       isBox: false,
       isDialogVisible: true,
       selectedStat: 'UnSubscribers',  
-      serverUrl: window.configData.APP_BASE_URL,      
+      serverUrl: window.configData.APP_BASE_URL,
+      total_country_Mensajes: 0,      
     }
   },
   computed: {
@@ -264,6 +274,20 @@ export default{
           "MensajesMes": yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US'),
         }
       });
+    },
+
+    getTotalCountriMessages: function(){
+      return this.GetDashData?.countries?.map( (item) => {
+        const today = new Date();
+        const yest = this.GetDashData?.yesterdayCountries;
+        const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100
+       
+        total_country_Mensajes += item.Mensajes+,
+          
+       
+      });
+
+      return total_country_Mensajes;
     },
 
     getChartLabels: function(){
