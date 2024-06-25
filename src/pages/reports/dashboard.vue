@@ -308,7 +308,7 @@ export default{
        return {
           
           "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US'),
-          // "PromedioMes": averageMonth,
+          "PromedioMes": this.total_country_Mensajes.PromedioMes,
           // "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US'),
         }
     },
