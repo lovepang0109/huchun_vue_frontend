@@ -32,7 +32,7 @@
           </template>
           <template v-slot:item="{ item, index }">
             <tr class="text-left">
-              <td>
+              <td class="flag_country">
                 <VImg v-if="!item.PAIS_DESTINO || item.PAIS_DESTINO == '*'" :max-width="32" :src="`${serverUrl}/flags/0.png`"/>
                 <VImg v-else :max-width="32" :src="`${serverUrl}/flags/${item.PAIS_DESTINO}.png`"/>
                 {{ item.state }}

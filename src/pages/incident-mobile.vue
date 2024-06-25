@@ -61,8 +61,8 @@
                     <template v-slot:item="{ item, index }">
                     <tr class="text-left">
                         <td>{{ item.Movil }}</td>
-                        <td>
-                            <VImg :max-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
+                        <td class="flag_country">
+                            <VImg :min-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
                             <span>{{ item.state }}</span>
                         </td>
                         <td>{{ item.Ruta }}</td>
@@ -193,4 +193,17 @@
     .v-progress-circular {
       margin: 1rem;
     }
+
+    .flag_country div:first-child{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.flag_country span{
+  margin-left:15px;
+}
+
+.flag_country{
+    text-align: left;
+}
     </style>
