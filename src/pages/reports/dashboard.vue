@@ -287,21 +287,21 @@ export default{
     },
 
   getTotalCountriMessages: function(){
-        var averageMonth = 0;
         this.GetDashData?.countries?.map( (item) => {
           const today = new Date();
           
           const yest = this.GetDashData?.yesterdayCountries;
-          averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
+          const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
           this.total_country_Mensajes.Mensajes += item.Mensajes;
-          averageMonth += averageMonth;
+          this.total_country_Mensajes.PromedioMes += averageMonth;
           // this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
           // console.log(averageMonth.toLocaleString('en-US'));
+           console.log(this.total_country_Mensajes.PromedioMes);
       });
 
   console.log("averageMonth");
-  console.log(averageMonth);
+  console.log(this.total_country_Mensajes.PromedioMes);
 
 
 
