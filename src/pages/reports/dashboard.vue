@@ -300,7 +300,7 @@ export default{
           // console.log(averageMonth.toLocaleString('en-US'));
       });
 
-  console.log("""""averageMonth""""");
+  console.log("averageMonth");
   console.log(averageMonth);
 
 
