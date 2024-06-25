@@ -186,6 +186,7 @@ export default {
     getTotalPrices: function()   {
       this.GetPricingCountriesData?.data?.map( (item) => {
           this.totalprice0 += parseFloat((item.paymentPrices.payment0).slice(0, -4));
+          console.log((item.paymentPrices.payment0).slice(0, -4));
           this.totalprice1 += parseFloat((item.paymentPrices.payment1).slice(0, -4));
           this.totalprice2 += parseFloat((item.paymentPrices.payment2).slice(0, -4));
           this.totalprice3 += parseFloat((item.paymentPrices.payment3).slice(0, -4));
@@ -245,5 +246,19 @@ export default {
 .v-progress-circular {
   margin: 1rem;
 }
+
+.flag_country div:first-child{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.flag_country span{
+  margin-left:15px;
+}
+
+.flag_country{
+    text-align: left;
+}
+
 </style>
   
