@@ -299,9 +299,9 @@ export default{
 
        return {
           
-          "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US'),
-          "PromedioMes": (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US'),
-          "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US'),
+          "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
+          "PromedioMes": (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
+          "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
         }
     },
    
