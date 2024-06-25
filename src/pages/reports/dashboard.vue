@@ -207,9 +207,9 @@
                   </tr>  
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <!-- <th scope="col" class="text-center">{{ getTotalCustomers.Mensajes }}</th>
+                    <th scope="col" class="text-center">{{ getTotalCustomers.Mensajes }}</th>
                     <th scope="col" class="text-center">{{ (this.total_customer_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) }}</th>
-                    <th scope="col" class="text-center">{{ (this.total_customer_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th> -->
+                    <th scope="col" class="text-center">{{ (this.total_customer_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th>
                     
                   </tr>            
                 </tbody>                
@@ -423,9 +423,9 @@ export default{
         const yest = this.GetDashData?.yesterdayCustomers;
         const msgMonth = yest[item.IDCliente]?.Mensajes;
 
-        this.total_provider_values.Mensajes += item.Mensajes;
-        this.total_provider_values.PromedioMes += Math.ceil( msgMonth/today.getDate()*100 )/100;
-        this.total_provider_values.MensajesMes += msgMonth;
+        this.total_customer_values.Mensajes += item.Mensajes;
+        this.total_customer_values.PromedioMes += Math.ceil( msgMonth/today.getDate()*100 )/100;
+        this.total_customer_values.MensajesMes += msgMonth;
 
       });
 
