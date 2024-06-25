@@ -129,14 +129,17 @@
                     <td>{{ item.PromedioMes }}</td>
                     <td>{{ item.MensajesMes }}</td>
                   </tr>
+
+                  <tr>
+                    <th scope="col" class="text-center">Total</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages}}</th>
+                    <th scope="col" class="text-center">Promedio Mes</th>
+                    <th scope="col" class="text-center">Mensajes Mes</th>                
+                  </tr>
+
                 </tbody>
                 
-                <tr>
-                  <th scope="col" class="text-center">Country</th>
-                  <th scope="col" class="text-center">ddd</th>
-                  <th scope="col" class="text-center">Promedio Mes</th>
-                  <th scope="col" class="text-center">Mensajes Mes</th>                
-                </tr>
+                
                
                 
               </VTable> 
@@ -282,12 +285,12 @@ export default{
         const yest = this.GetDashData?.yesterdayCountries;
         const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
        
-        total_country_Mensajes += item.Mensajes;
+        this.total_country_Mensajes += item.Mensajes;
           
        
       });
 
-      return total_country_Mensajes;
+      return this.total_country_Mensajes;
     },
 
     getChartLabels: function(){
