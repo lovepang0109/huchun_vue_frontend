@@ -130,14 +130,14 @@
                     <td>{{ item.MensajesMes }}</td>
                   </tr>
                 </tbody>
-                <tfoot class="text-center">
-                  <tr>
-                    <th scope="col" class="text-center">Country</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages()}}</th>
-                    <th scope="col" class="text-center">Promedio Mes</th>
-                    <th scope="col" class="text-center">Mensajes Mes</th>                
-                  </tr>
-                </tfoot>
+                
+                <tr>
+                  <th scope="col" class="text-center">Country</th>
+                  <th scope="col" class="text-center">ddd</th>
+                  <th scope="col" class="text-center">Promedio Mes</th>
+                  <th scope="col" class="text-center">Mensajes Mes</th>                
+                </tr>
+               
                 
               </VTable> 
             </VCol>
