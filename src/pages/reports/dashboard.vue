@@ -298,6 +298,7 @@ export default{
           // console.log(averageMonth.toLocaleString('en-US'));
       });
 
+  console.log((this.total_country_Mensajes.PromedioMes).toLocaleString('en-US'));
 
        return {
           
