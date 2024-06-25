@@ -135,7 +135,7 @@
                     <th scope="col" class="text-center">{{ getTotalCountriMessages.Mensajes }}</th>
                     <!-- <th scope="col" class="text-center">{{getTotalCountriMessages.PromedioMes}}</th>
                     <th scope="col" class="text-center">{{getTotalCountriMessages.MensajesMes}}</th>       -->
-                    <th scope="col" class="text-center">{{ getTotalCountriMessages.PromedioMes }}</th>
+                    <th scope="col" class="text-center">{{ this.total_country_Mensajes.PromedioMes }}</th>
                     <th scope="col" class="text-center">dddd</th>
                     
                   </tr>
@@ -302,8 +302,6 @@ export default{
 
   console.log("averageMonth");
   console.log(this.total_country_Mensajes.PromedioMes);
-
-
 
        return {
           
