@@ -132,7 +132,7 @@
 
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages['Mensajes']}}</th>
+                    <th scope="col" class="text-center">{{totalMensajes]}}</th>
                     <th scope="col" class="text-center">ssss</th>
                     <th scope="col" class="text-center">ssss</th>                
                   </tr>
@@ -227,7 +227,16 @@ export default{
       isDialogVisible: true,
       selectedStat: 'UnSubscribers',  
       serverUrl: window.configData.APP_BASE_URL,
-      total_country_Mensajes: [],      
+
+      totalMensajes: 0,
+      totalPromedioMes: 0,
+      totalMensajesMes: 0,
+      total_country_Mensajes: {
+        Mensajes: 0,
+        PromedioMes: 0,
+        MensajesMes: 0
+      },
+
     }
   },
   computed: {
@@ -290,8 +299,8 @@ export default{
        return {
           
           "Mensajes" : this.total_country_Mensajes["Mensajes"],
-          "PromedioMes": this.total_country_Mensajes["PromedioMes"],
-          "MensajesMes": this.total_country_Mensajes["MensajesMes"],
+          // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
+          // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
         }
     },
 
@@ -361,6 +370,8 @@ export default{
   },
   mounted() {
     this.fetchDashData();
+    const result = this.getTotalCountriMessages();
+    this.totalMensajes = result.Mensajes;
   },  
   methods: {
     ...mapActions(['fetchDashData', ]),    
