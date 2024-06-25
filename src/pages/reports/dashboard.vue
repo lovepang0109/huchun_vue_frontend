@@ -287,20 +287,20 @@ export default{
     },
 
   getTotalCountriMessages: function(){
-        
+        var averageMonth = 0;
         this.GetDashData?.countries?.map( (item) => {
           const today = new Date();
-          var averageMonth = 0;
+          
           const yest = this.GetDashData?.yesterdayCountries;
           averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
           this.total_country_Mensajes.Mensajes += item.Mensajes;
-          this.total_country_Mensajes.PromedioMes += averageMonth;
+          averageMonth += averageMonth;
           // this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
           // console.log(averageMonth.toLocaleString('en-US'));
       });
 
-  console.log((this.total_country_Mensajes.PromedioMes).toLocaleString('en-US'));
+  console.log(averageMonth.toLocaleString('en-US'));
 
        return {
           
