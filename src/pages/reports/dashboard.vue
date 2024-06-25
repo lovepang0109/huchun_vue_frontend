@@ -296,14 +296,13 @@ export default{
           // this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
       });
 
-      console.log( this.total_country_Mensajes.Mensajes);
 
-      //  return {
+       return {
           
-      //     "Mensajes" : this.total_country_Mensajes["Mensajes"],
-      //     // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
-      //     // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
-      //   }
+          "Mensajes" : this.total_country_Mensajes.Mensajes,
+          // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
+          // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
+        }
     },
    
 
