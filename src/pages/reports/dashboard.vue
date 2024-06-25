@@ -133,10 +133,8 @@
                   <tr>
                     <th scope="col" class="text-center">Total</th>
                     <th scope="col" class="text-center">{{ getTotalCountriMessages.Mensajes }}</th>
-                    <!-- <th scope="col" class="text-center">{{getTotalCountriMessages.PromedioMes}}</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages.MensajesMes}}</th>       -->
                     <th scope="col" class="text-center">{{ this.total_country_Mensajes.PromedioMes }}</th>
-                    <th scope="col" class="text-center">dddd</th>
+                    <th scope="col" class="text-center">{{ this.total_country_Mensajes.MensajesMes}} </th>
                     
                   </tr>
 
@@ -295,19 +293,15 @@ export default{
         
           this.total_country_Mensajes.Mensajes += item.Mensajes;
           this.total_country_Mensajes.PromedioMes += averageMonth;
-          // this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
-          // console.log(averageMonth.toLocaleString('en-US'));
-           console.log(averageMonth);
+          this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
+          
       });
-
-  console.log("averageMonth");
-  console.log(this.total_country_Mensajes.PromedioMes);
 
        return {
           
           "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US'),
-          "PromedioMes": this.total_country_Mensajes.PromedioMes,
-          // "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US'),
+          "PromedioMes": (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US'),
+          "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US'),
         }
     },
    
