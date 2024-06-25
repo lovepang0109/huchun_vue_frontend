@@ -396,9 +396,13 @@ export default{
 .flag_country div:first-child{
   display: inline-block;
   vertical-align: middle;
-  text-align: left;
+
 }
 .flag_country span{
   margin-left:15px;
+}
+
+.flag_country{
+    text-align: left;
 }
 </style>
