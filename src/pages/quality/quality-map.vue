@@ -15,9 +15,9 @@
                       :sort-by="[{ key: 'calories', order: 'asc' }]" >          
           <template v-slot:item="{ item, index }">
             <tr class="text-left">                           
-              <td>
-                <VImg v-if="!item.Pais_Destino || item.Pais_Destino == '*'" :max-width="32" :src="`${serverUrl}/flags/0.png`"/>
-                <VImg v-else :max-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
+              <td class="flag_country">
+                <VImg v-if="!item.Pais_Destino || item.Pais_Destino == '*'" :min-width="32" :src="`${serverUrl}/flags/0.png`"/>
+                <VImg v-else :min-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
                 {{ item.state }}
               </td>
 

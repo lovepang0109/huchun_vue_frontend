@@ -86,3 +86,20 @@ export default {
   },    
 }
 </script>  
+
+<style>
+.flag_country div:first-child{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.flag_country span{
+  margin-left:15px;
+}
+
+.flag_country{
+    text-align: left;
+}
+
+
+</style>

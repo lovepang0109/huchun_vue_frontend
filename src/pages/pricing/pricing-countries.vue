@@ -67,8 +67,8 @@
           <template v-slot:item="{ item, index }">
             <tr class="text-left">
               <td class="flag_country">
-                <VImg v-if="!item.PAIS_DESTINO || item.PAIS_DESTINO == '*'" :max-width="32" :src="`${serverUrl}/flags/0.png`"/>
-                <VImg v-else :max-width="32" :src="`${serverUrl}/flags/${item.PAIS_DESTINO}.png`"/>
+                <VImg v-if="!item.PAIS_DESTINO || item.PAIS_DESTINO == '*'" :min-width="32" :src="`${serverUrl}/flags/0.png`"/>
+                <VImg v-else :min-width="32" :src="`${serverUrl}/flags/${item.PAIS_DESTINO}.png`"/>
                 {{ item.state }}
               </td>
               <td>{{ item.NOMBRE_PROVEEDOR }}</td>
@@ -104,9 +104,9 @@
           </thead>
           <tbody>
             <tr>
-              <td class="font-weight-bold" colspan="2">Totals</td>
+              <td class="font-weight-bold" colspan="5">Totals</td>
               <td class="text-xs-right font-weight-bold">{{getTotalPrices}}</td>
-              <td class="text-xs-right font-weight-bold">{{totalprice1}}</td>
+              <td class="text-xs-right font-weight-bold">{{this.totalprice1}}</td>
               <td class="text-xs-right font-weight-bold">tttt</td>
               <td class="text-xs-right font-weight-bold">tttttt</td>
               <td class="text-xs-right font-weight-bold">ttttttt</td>
@@ -185,16 +185,17 @@ export default {
     },
     getTotalPrices: function()   {
       this.GetPricingCountriesData?.data?.map( (item) => {
-          totalprice0 += item.paymentPrices.payment0;
-          totalprice1 += item.paymentPrices.payment1;
-          totalprice2 += item.paymentPrices.payment2;
-          totalprice3 += item.paymentPrices.payment3;
-          totalprice4 += item.paymentPrices.payment4;
-          totalprice5 += item.paymentPrices.payment5;
-          totalprice6 += item.paymentPrices.payment6;
-          totalprice7 += item.paymentPrices.payment7;
+          this.totalprice0 += item.paymentPrices.payment0;
+          this.totalprice1 += item.paymentPrices.payment1;
+          this.totalprice2 += item.paymentPrices.payment2;
+          this.totalprice3 += item.paymentPrices.payment3;
+          this.totalprice4 += item.paymentPrices.payment4;
+          this.totalprice5 += item.paymentPrices.payment5;
+          this.totalprice6 += item.paymentPrices.payment6;
+          this.totalprice7 += item.paymentPrices.payment7;
 
       })
+
       return totalprice0;
     },
 
