@@ -378,7 +378,7 @@ export default{
 
   getTotalProviders: function(){     
 
-      return this.GetDashData?.suppliers?.map( (item) => {
+      this.GetDashData?.suppliers?.map( (item) => {
         const today = new Date();
         const yest = this.GetDashData?.yesterdaySuppliers;
         const msgMonth = yest[item.IDProveedor]?.Mensajes;
@@ -417,7 +417,7 @@ export default{
   
     getTotalCustomers: function(){     
 
-      return this.GetDashData?.customers?.map( (item) => {
+      this.GetDashData?.customers?.map( (item) => {
         const today = new Date();
         const yest = this.GetDashData?.yesterdayCustomers;
         const msgMonth = yest[item.IDCliente]?.Mensajes;
