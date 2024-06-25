@@ -110,7 +110,7 @@
 
             <template v-slot:item="{ item, index }">
               <tr class="text-left">                
-                <td>
+                <td class="flag_country">
                   <VImg :max-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
                   <span>{{ item.state }}</span>
                 </td>
@@ -314,3 +314,19 @@
     }
   }
   </script>  
+
+  <style>
+  
+.flag_country div:first-child{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.flag_country span{
+  margin-left:15px;
+}
+
+.flag_country{
+    text-align: left;
+}
+  </style>
