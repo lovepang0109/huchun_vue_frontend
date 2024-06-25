@@ -130,11 +130,11 @@
                     <td>{{ item.MensajesMes }}</td>
                   </tr>
 
-                  <tr v-for="(item, key) in getTotalCountriMessages" :key="key">
+                  <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{item.Mensajes.toLocaleString("en-US")}}</th>
-                    <th scope="col" class="text-center">{{item.PromedioMes}}</th>
-                    <th scope="col" class="text-center">{{item.MensajesMes}}</th>                
+                    <th scope="col" class="text-center">{{total_country_Mensajes.Mensajes.toLocaleString("en-US")}}</th>
+                    <th scope="col" class="text-center">{{total_country_Mensajes.PromedioMes}}</th>
+                    <th scope="col" class="text-center">{{total_country_Mensajes.MensajesMes}}</th>                
                   </tr>
 
                 </tbody>
@@ -356,6 +356,7 @@ export default{
   },
   mounted() {
     this.fetchDashData();
+    this.getTotalCountriMessages();
   },  
   methods: {
     ...mapActions(['fetchDashData', ]),    
