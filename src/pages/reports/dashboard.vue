@@ -133,8 +133,10 @@
                   <tr>
                     <th scope="col" class="text-center">Total</th>
                     <th scope="col" class="text-center">{{getTotalCountriMessages.Mensajes}}</th>
-                    <th scope="col" class="text-center">ssss</th>
-                    <th scope="col" class="text-center">ssss</th>                
+                    <th scope="col" class="text-center">{{getTotalCountriMessages.PromedioMes}}</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages.MensajesMes}}</th>      
+
+                    
                   </tr>
 
                 </tbody>
