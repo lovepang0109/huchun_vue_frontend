@@ -111,7 +111,7 @@
             <template v-slot:item="{ item, index }">
               <tr class="text-left">                
                 <td class="flag_country">
-                  <VImg :max-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
+                  <VImg :min-width="32" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
                   <span>{{ item.state }}</span>
                 </td>
                 <td>{{ item.Enviados }}</td>
