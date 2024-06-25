@@ -113,7 +113,7 @@
               <VTable class="text-no-wrap text-center pb-4">
                 <thead class="text-center">
                   <tr>
-                    <th scope="col" class="text-center">Country</th>
+                    <th scope="col" class="text-center">Country frefrefr</th>
                     <th scope="col" class="text-center">Mensajes Ayer</th>
                     <th scope="col" class="text-center">Promedio Mes</th>
                     <th scope="col" class="text-center">Mensajes Mes</th>                
