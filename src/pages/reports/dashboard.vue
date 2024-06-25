@@ -290,10 +290,9 @@ export default{
           const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
           this.total_country_Mensajes.Mensajes += item.Mensajes;
-      console.log( this.total_country_Mensajes.Mensajes);
-
-          // this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
-          // this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
+          this.total_country_Mensajes.PromedioMes += averageMonth.toLocaleString('en-US');
+          this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
+          console.log(averageMonth.toLocaleString('en-US'));
       });
 
 
