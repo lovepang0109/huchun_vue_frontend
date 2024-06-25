@@ -121,8 +121,8 @@
                 </thead>
                 <tbody class="text-center">
                   <tr v-for="(item, key) in getCountriMessages" :key="key">
-                    <td>                      
-                      <VImg :max-width="30" class="mx-auto" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
+                    <td class="flag_country">                      
+                      <VImg :min-width="30" class="mx-auto" :src="`${serverUrl}/flags/${item.Pais_Destino}.png`"/>
                       <span>{{ item.code }}</span>
                     </td>
                     <td>{{ item.Mensajes.toLocaleString("en-US") }}</td>
@@ -391,5 +391,13 @@ export default{
 }
 .v-progress-circular {
   margin: 1rem;
+}
+
+.flag_country div:first-child{
+  display: inline-block;
+  vertical-align: middle;
+}
+.flag_country span{
+  margin-left:15px;
 }
 </style>
