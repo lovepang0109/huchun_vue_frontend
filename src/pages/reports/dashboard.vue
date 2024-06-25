@@ -132,7 +132,7 @@
 
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{totalMensajes}}</th>
+                    <th scope="col" class="text-center">{{total_country_Mensajes.Mensajes}}</th>
                     <th scope="col" class="text-center">ssss</th>
                     <th scope="col" class="text-center">ssss</th>                
                   </tr>
@@ -228,14 +228,12 @@ export default{
       selectedStat: 'UnSubscribers',  
       serverUrl: window.configData.APP_BASE_URL,
 
-      totalMensajes: 0,
-      totalPromedioMes: 0,
-      totalMensajesMes: 0,
-      total_country_Mensajes: {
+      
+      total_country_Mensajes: ({
         Mensajes: 0,
         PromedioMes: 0,
         MensajesMes: 0
-      },
+      }),
 
     }
   },
@@ -358,23 +356,23 @@ export default{
   },  
   methods: {
     ...mapActions(['fetchDashData', ]),    
-     getTotalCountriMessages: function(){
+     getTotalCountriMessages(){
         this.GetDashData?.countries?.map( (item) => {
           const today = new Date();
           const yest = this.GetDashData?.yesterdayCountries;
           const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
-          this.total_country_Mensajes["Mensajes"] += item.Mensajes;
-          this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
-          this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
+          this.total_country_Mensajes.Mensajes += item.Mensajes;
+          // this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
+          // this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
       });
 
-       return {
+      //  return {
           
-          "Mensajes" : this.total_country_Mensajes["Mensajes"],
-          // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
-          // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
-        }
+      //     "Mensajes" : this.total_country_Mensajes["Mensajes"],
+      //     // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
+      //     // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
+      //   }
     },
   },
   watch: {    
