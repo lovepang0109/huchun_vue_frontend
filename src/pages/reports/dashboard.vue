@@ -290,17 +290,17 @@ export default{
           const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
           this.total_country_Mensajes.Mensajes += item.Mensajes;
-          this.total_country_Mensajes.PromedioMes += averageMonth.toLocaleString('en-US');
-          this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
-          console.log(averageMonth.toLocaleString('en-US'));
+          this.total_country_Mensajes.PromedioMes += averageMonth;
+          this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
+          // console.log(averageMonth.toLocaleString('en-US'));
       });
 
 
        return {
           
-          "Mensajes" : this.total_country_Mensajes.Mensajes,
-          // "PromedioMes": this.total_country_Mensajes["PromedioMes"],
-          // "MensajesMes": this.total_country_Mensajes["MensajesMes"],
+          "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US'),
+          "PromedioMes": (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US'),
+          "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US'),
         }
     },
    
