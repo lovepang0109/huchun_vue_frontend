@@ -132,9 +132,9 @@
 
                   <tr  v-for="(item, key) in getTotalCountriMessages" :key="key">
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{item.Mensajes.toLocaleString("en-US")}}</th>
-                    <th scope="col" class="text-center">{{item.PromedioMes}}</th>
-                    <th scope="col" class="text-center">{{item.MensajesMes}}</th>                
+                    <th scope="col" class="text-center">{{item[0]}}</th>
+                    <th scope="col" class="text-center">ssss</th>
+                    <th scope="col" class="text-center">ssss</th>                
                   </tr>
 
                 </tbody>
@@ -282,9 +282,9 @@ export default{
           const yest = this.GetDashData?.yesterdayCountries;
           const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
-          this.total_country_Mensajes["Mensajes"] += item.Mensajes;
-          this.total_country_Mensajes["PromedioMes"] += averageMonth.toLocaleString('en-US');
-          this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
+          this.total_country_Mensajes[0] += item.Mensajes;
+          this.total_country_Mensajes[1] += averageMonth.toLocaleString('en-US');
+          this.total_country_Mensajes[2] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
       });
 
        return {
