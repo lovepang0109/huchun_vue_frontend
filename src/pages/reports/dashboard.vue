@@ -351,8 +351,7 @@ export default{
   },
   mounted() {
     this.fetchDashData();
-    const result = this.getTotalCountriMessages();
-    this.totalMensajes = result.Mensajes;
+    this.getTotalCountriMessages();
   },  
   methods: {
     ...mapActions(['fetchDashData', ]),    
