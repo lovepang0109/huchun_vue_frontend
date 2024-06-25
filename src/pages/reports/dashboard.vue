@@ -132,10 +132,10 @@
 
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages.Mensajes}}</th>
+                    <th scope="col" class="text-center">{{ getTotalCountriMessages.Mensajes }}</th>
                     <!-- <th scope="col" class="text-center">{{getTotalCountriMessages.PromedioMes}}</th>
                     <th scope="col" class="text-center">{{getTotalCountriMessages.MensajesMes}}</th>       -->
-                    <th scope="col" class="text-center">ddddd</th>
+                    <th scope="col" class="text-center">{{ getTotalCountriMessages.PromedioMes }}</th>
                     <th scope="col" class="text-center">dddd</th>
                     
                   </tr>
