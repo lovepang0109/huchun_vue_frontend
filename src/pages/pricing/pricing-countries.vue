@@ -196,7 +196,7 @@ export default {
 
       })
 
-      return totalprice0;
+      return this.totalprice0;
     },
 
   },
