@@ -132,7 +132,7 @@
 
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages[0]}}</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages}}</th>
                     <th scope="col" class="text-center">ssss</th>
                     <th scope="col" class="text-center">ssss</th>                
                   </tr>
