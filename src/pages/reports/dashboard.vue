@@ -287,9 +287,10 @@ export default{
     },
 
   getTotalCountriMessages: function(){
-        var averageMonth = 0;
+        
         this.GetDashData?.countries?.map( (item) => {
           const today = new Date();
+          var averageMonth = 0;
           const yest = this.GetDashData?.yesterdayCountries;
           averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
