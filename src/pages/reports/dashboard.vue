@@ -130,18 +130,15 @@
                     <td>{{ item.MensajesMes }}</td>
                   </tr>
 
-                  <tr>
+                  <tr v-for="(item, key) in getTotalCountriMessages" :key="key">
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages}}</th>
-                    <th scope="col" class="text-center">Promedio Mes</th>
-                    <th scope="col" class="text-center">Mensajes Mes</th>                
+                    <th scope="col" class="text-center">{{item.Mensajes.toLocaleString("en-US")}}</th>
+                    <th scope="col" class="text-center">{{item.PromedioMes}}</th>
+                    <th scope="col" class="text-center">{{item.MensajesMes}}</th>                
                   </tr>
 
                 </tbody>
-                
-                
-               
-                
+
               </VTable> 
             </VCol>
 
@@ -230,7 +227,7 @@ export default{
       isDialogVisible: true,
       selectedStat: 'UnSubscribers',  
       serverUrl: window.configData.APP_BASE_URL,
-      total_country_Mensajes: 0,      
+      total_country_Mensajes: [],      
     }
   },
   computed: {
@@ -285,9 +282,9 @@ export default{
           const yest = this.GetDashData?.yesterdayCountries;
           const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
         
-          this.total_country_Mensajes += item.Mensajes;
-            
-       
+          this.total_country_Mensajes[Mensajes] += item.Mensajes;
+          this.total_country_Mensajes[PromedioMes] += averageMonth.toLocaleString('en-US');
+          this.total_country_Mensajes[MensajesMes] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
       });
 
       return this.total_country_Mensajes;
