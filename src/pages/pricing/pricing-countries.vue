@@ -185,14 +185,14 @@ export default {
     },
     getTotalPrices: function()   {
       this.GetPricingCountriesData?.data?.map( (item) => {
-          this.totalprice0 += item.paymentPrices.payment0;
-          this.totalprice1 += item.paymentPrices.payment1;
-          this.totalprice2 += item.paymentPrices.payment2;
-          this.totalprice3 += item.paymentPrices.payment3;
-          this.totalprice4 += item.paymentPrices.payment4;
-          this.totalprice5 += item.paymentPrices.payment5;
-          this.totalprice6 += item.paymentPrices.payment6;
-          this.totalprice7 += item.paymentPrices.payment7;
+          this.totalprice0 += parseFloat((item.paymentPrices.payment0).slice(0, -4));
+          this.totalprice1 += parseFloat((item.paymentPrices.payment1).slice(0, -4));
+          this.totalprice2 += parseFloat((item.paymentPrices.payment2).slice(0, -4));
+          this.totalprice3 += parseFloat((item.paymentPrices.payment3).slice(0, -4));
+          this.totalprice4 += parseFloat((item.paymentPrices.payment4).slice(0, -4));
+          this.totalprice5 += parseFloat((item.paymentPrices.payment5).slice(0, -4));
+          this.totalprice6 += parseFloat((item.paymentPrices.payment6).slice(0, -4));
+          this.totalprice7 += parseFloat((item.paymentPrices.payment7).slice(0, -4));
 
       })
 
