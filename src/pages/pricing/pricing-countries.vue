@@ -8,7 +8,7 @@
                       class="elevation-1 px-4 py-2"
                       :headers="headers" 
                       :items="connectionData" 
-                      style="min-height: 450px; font-size: 10pt;"
+                      style="min-height: 450px; font-size: 10pt;width:160%;"
                       :sort-by="[{ key: 'calories', order: 'asc' }]" >
           <template v-slot:top>
             <VRow class="align-center">
@@ -87,7 +87,7 @@
           </template>
         </v-data-table>
 
-        <v-table>
+        <!-- <v-table>
           <thead>
             <tr>
               <th colspan="5" class="text-center"></th>
@@ -116,7 +116,7 @@
 
             </tr>
           </tbody>
-        </v-table> 
+        </v-table>  -->
 
       </div>
     </VCard>
