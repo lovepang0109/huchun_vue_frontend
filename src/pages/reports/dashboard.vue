@@ -287,7 +287,12 @@ export default{
           this.total_country_Mensajes["MensajesMes"] += yest[item.Pais_Destino]?.Mensajes.toLocaleString('en-US');
       });
 
-      return this.total_country_Mensajes;
+       return {
+          
+          "Mensajes" : this.total_country_Mensajes["Mensajes"],
+          "PromedioMes": this.total_country_Mensajes["PromedioMes"],
+          "MensajesMes": this.total_country_Mensajes["MensajesMes"],
+        }
     },
 
     getChartLabels: function(){
