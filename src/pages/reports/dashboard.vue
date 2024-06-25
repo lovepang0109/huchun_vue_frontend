@@ -113,7 +113,7 @@
               <VTable class="text-no-wrap text-center pb-4">
                 <thead class="text-center">
                   <tr>
-                    <th scope="col" class="text-center">Country frefrefr</th>
+                    <th scope="col" class="text-center">Country </th>
                     <th scope="col" class="text-center">Mensajes Ayer</th>
                     <th scope="col" class="text-center">Promedio Mes</th>
                     <th scope="col" class="text-center">Mensajes Mes</th>                
@@ -132,7 +132,7 @@
 
                   <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{getTotalCountriMessages}}</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages.Mensajes}}</th>
                     <th scope="col" class="text-center">ssss</th>
                     <th scope="col" class="text-center">ssss</th>                
                   </tr>
