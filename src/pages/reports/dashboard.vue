@@ -173,15 +173,16 @@
                     <td>{{ item.Mensajes }}</td>
                     <td>{{ item.PromedioMes.toLocaleString("en-US") }}</td>
                     <td>{{ item.MensajesMes }}</td>
-                  </tr>               
-                </tbody>
-                <tr>
+                  </tr>    
+                  <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <!-- <th scope="col" class="text-center">{{ getTotalProviders.Mensajes }}</th>
-                    <th scope="col" class="text-center">{{ (this.total_provider_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) }}</th>
-                    <th scope="col" class="text-center">{{ (this.total_provider_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th> -->
+                    <th scope="col" class="text-center">{{ getTotalProviders.Mensajes }}</th>
+                    <!-- <th scope="col" class="text-center">{{ (this.total_provider_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) }}</th>
+                    <th scope="col" class="text-center">{{ (this.total_provider_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th>  -->
                     
-                  </tr>
+                  </tr>           
+                </tbody>
+                
               </VTable>               
             </VCol>
 
