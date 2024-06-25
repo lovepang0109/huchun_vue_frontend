@@ -280,9 +280,9 @@ export default{
       return this.GetDashData?.countries?.map( (item) => {
         const today = new Date();
         const yest = this.GetDashData?.yesterdayCountries;
-        const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100
+        const averageMonth = Math.round( yest[item.Pais_Destino]?.Mensajes/today.getDate()*100 )/100;
        
-        total_country_Mensajes += item.Mensajes,
+        total_country_Mensajes += item.Mensajes;
           
        
       });
