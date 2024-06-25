@@ -133,8 +133,8 @@
                   <tr>
                     <th scope="col" class="text-center">Total</th>
                     <th scope="col" class="text-center">{{ getTotalCountriMessages.Mensajes }}</th>
-                    <th scope="col" class="text-center">{{ this.total_country_Mensajes.PromedioMes }}</th>
-                    <th scope="col" class="text-center">{{ this.total_country_Mensajes.MensajesMes}} </th>
+                    <th scope="col" class="text-center">{{ (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) }}</th>
+                    <th scope="col" class="text-center">{{ (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th>
                     
                   </tr>
 
@@ -297,7 +297,7 @@ export default{
           
       });
 
-console.log( (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}))
+// console.log( (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}))
        return {
           
           "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
