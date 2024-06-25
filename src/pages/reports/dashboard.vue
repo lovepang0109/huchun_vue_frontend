@@ -297,6 +297,7 @@ export default{
           
       });
 
+console.log( (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}))
        return {
           
           "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
