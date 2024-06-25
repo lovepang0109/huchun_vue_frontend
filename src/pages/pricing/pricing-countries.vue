@@ -261,7 +261,7 @@ export default {
 }
 
 
-.v-table__wrapper table{
+#providerTable table{
   width:160% !important;
 }
 
