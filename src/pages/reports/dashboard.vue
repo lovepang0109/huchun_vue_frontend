@@ -135,7 +135,7 @@
                     <th scope="col" class="text-center">{{getTotalCountriMessages.Mensajes}}</th>
                     <!-- <th scope="col" class="text-center">{{getTotalCountriMessages.PromedioMes}}</th>
                     <th scope="col" class="text-center">{{getTotalCountriMessages.MensajesMes}}</th>       -->
-                    <th scope="col" class="text-center">ffff</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages.PromedioMes}}</th>
                     <th scope="col" class="text-center">dddd</th>
                     
                   </tr>
@@ -294,17 +294,15 @@ export default{
         
           this.total_country_Mensajes.Mensajes += item.Mensajes;
           this.total_country_Mensajes.PromedioMes += averageMonth;
-          console.log(averageMonth);
           // this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
           // console.log(averageMonth.toLocaleString('en-US'));
       });
 
-console.log(this.total_country_Mensajes.PromedioMes);
 
        return {
           
           "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US'),
-          "PromedioMes": (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US'),
+          "PromedioMes": this.total_country_Mensajes.PromedioMes,
           // "MensajesMes": (this.total_country_Mensajes.MensajesMes).toLocaleString('en-US'),
         }
     },
