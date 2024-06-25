@@ -297,7 +297,7 @@ export default{
           this.total_country_Mensajes.PromedioMes += averageMonth;
           // this.total_country_Mensajes.MensajesMes += yest[item.Pais_Destino]?.Mensajes;
           // console.log(averageMonth.toLocaleString('en-US'));
-           console.log(this.total_country_Mensajes.PromedioMes);
+           console.log(averageMonth);
       });
 
   console.log("averageMonth");
