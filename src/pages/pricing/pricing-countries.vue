@@ -262,7 +262,7 @@ export default {
 
 
 .v-table__wrapper table{
-  width:160%;
+  width:160% !important;
 }
 
 </style>
