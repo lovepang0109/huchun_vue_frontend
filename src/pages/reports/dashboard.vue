@@ -175,6 +175,13 @@
                     <td>{{ item.MensajesMes }}</td>
                   </tr>               
                 </tbody>
+                <tr>
+                    <th scope="col" class="text-center">Total</th>
+                    <th scope="col" class="text-center">{{ getTotalProviders.Mensajes }}</th>
+                    <th scope="col" class="text-center">{{ (this.total_provider_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) }}</th>
+                    <th scope="col" class="text-center">{{ (this.total_provider_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th>
+                    
+                  </tr>
               </VTable>               
             </VCol>
 
@@ -196,7 +203,14 @@
                     <td>{{ item.Mensajes }}</td>
                     <td>{{ item.PromedioMes.toLocaleString("en-US") }}</td>
                     <td>{{ item.MensajesMes }}</td>
-                  </tr>              
+                  </tr>  
+                  <tr>
+                    <th scope="col" class="text-center">Total</th>
+                    <th scope="col" class="text-center">{{ getTotalCustomers.Mensajes }}</th>
+                    <th scope="col" class="text-center">{{ (this.total_customer_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) }}</th>
+                    <th scope="col" class="text-center">{{ (this.total_customer_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}} </th>
+                    
+                  </tr>            
                 </tbody>                
               </VTable>               
             </VCol>
@@ -231,6 +245,16 @@ export default{
 
       
       total_country_Mensajes: ({
+        Mensajes: 0,
+        PromedioMes: 0,
+        MensajesMes: 0
+      }),
+      total_provider_values: ({
+        Mensajes: 0,
+        PromedioMes: 0,
+        MensajesMes: 0
+      }),
+      total_customer_values: ({
         Mensajes: 0,
         PromedioMes: 0,
         MensajesMes: 0
@@ -297,7 +321,6 @@ export default{
           
       });
 
-// console.log( (this.total_country_Mensajes.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}))
        return {
           
           "Mensajes" : (this.total_country_Mensajes.Mensajes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
@@ -353,6 +376,28 @@ export default{
       });
     },
 
+  getTotalProviders: function(){     
+
+      return this.GetDashData?.suppliers?.map( (item) => {
+        const today = new Date();
+        const yest = this.GetDashData?.yesterdaySuppliers;
+        const msgMonth = yest[item.IDProveedor]?.Mensajes;
+
+        this.total_provider_values.Mensajes += item.Mensajes;
+        this.total_provider_values.PromedioMes += Math.ceil( msgMonth/today.getDate()*100 )/100;
+        this.total_provider_values.MensajesMes += msgMonth;
+          
+      });
+
+       return {
+          
+          "Mensajes" : (this.total_provider_values.Mensajes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
+          "PromedioMes": (this.total_provider_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) ,
+          "MensajesMes": (this.total_provider_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) ,
+        }
+      
+    },
+
     getCustomers: function(){     
 
       return this.GetDashData?.customers?.map( (item) => {
@@ -369,6 +414,27 @@ export default{
       });
     },
 
+  
+    getTotalCustomers: function(){     
+
+      return this.GetDashData?.customers?.map( (item) => {
+        const today = new Date();
+        const yest = this.GetDashData?.yesterdayCustomers;
+        const msgMonth = yest[item.IDCliente]?.Mensajes;
+
+        this.total_provider_values.Mensajes += item.Mensajes;
+        this.total_provider_values.PromedioMes += Math.ceil( msgMonth/today.getDate()*100 )/100;
+        this.total_provider_values.MensajesMes += msgMonth;
+
+      });
+
+      return {
+          
+          "Mensajes" : (this.total_customer_values.Mensajes).toLocaleString('en-US', {minimumFractionDigits: 2}) ,
+          "PromedioMes": (this.total_customer_values.PromedioMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) ,
+          "MensajesMes": (this.total_customer_values.MensajesMes).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) ,
+        }
+    },
     
   },
   mounted() {
