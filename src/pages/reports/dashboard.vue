@@ -130,9 +130,9 @@
                     <td>{{ item.MensajesMes }}</td>
                   </tr>
 
-                  <tr  v-for="(item, key) in getTotalCountriMessages" :key="key">
+                  <tr>
                     <th scope="col" class="text-center">Total</th>
-                    <th scope="col" class="text-center">{{item[0]}}</th>
+                    <th scope="col" class="text-center">{{getTotalCountriMessages[0]}}</th>
                     <th scope="col" class="text-center">ssss</th>
                     <th scope="col" class="text-center">ssss</th>                
                   </tr>
