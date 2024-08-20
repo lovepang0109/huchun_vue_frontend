@@ -1,0 +1,20 @@
+.purple-text {
+  color: #7472FE !important;
+}
+
+.institute-item {
+  padding: 0.8rem 0.5rem !important;
+  display: block;
+  width: 100%;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.space {
+  padding-left: 0.8rem;
+}

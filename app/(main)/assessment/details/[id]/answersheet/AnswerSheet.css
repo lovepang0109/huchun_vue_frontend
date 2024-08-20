@@ -1,0 +1,52 @@
+table {
+  width: 100%;
+}
+
+.ans-th {
+  vertical-align: bottom;
+}
+
+.ans-td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+.ans-th.rotate-header {
+  /* Something you can count on */
+  height: 90px;
+  white-space: nowrap;
+}
+
+.ans-th.rotate-header > div {
+  transform: translate(-63px, -45px) rotate(-315deg);
+  width: 55px;
+}
+
+.ans-th.rotate-header > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
+
+.correct-btn {
+  color: #000000;
+  background-color: rgb(0, 227, 150);
+}
+
+.incorrect-color {
+  color: #ffffff;
+}
+
+.incorrect-btn {
+  color: #ffffff;
+  background-color: rgb(255, 69, 96);
+}
+
+.missed-color {
+  color: #ffffff;
+}
+
+.missed-btn {
+  color: #ffffff;
+  background-color: rgb(0, 143, 251);
+}

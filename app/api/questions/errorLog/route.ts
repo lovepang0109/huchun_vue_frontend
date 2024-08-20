@@ -1,0 +1,10 @@
+import { getData, postData } from "@/lib/api";
+import { NextRequest } from "next/server";
+
+export async function GET(request: NextRequest, { params }: { params: any }) {
+  return await getData(`/questions/errorLog`, request);
+}
+
+export async function POST(request: NextRequest) {
+  return await postData(`/questions/errorLog`, await request.json(), request);
+}

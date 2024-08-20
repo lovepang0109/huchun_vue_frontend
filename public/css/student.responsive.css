@@ -1,0 +1,444 @@
+@media screen and (max-width: 600px) {
+  .cal-modal .modal-body {
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .h-md-100 {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  #page-wrapper {
+    min-height: calc(100vh - 42px);
+  }
+
+  footer.bg-primary {
+    height: 42px;
+  }
+
+  .col-5_20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .w-mw-lg-125 {
+    width: 125px;
+    max-width: 125px;
+  }
+
+  .h-lg-100 {
+    height: 100% !important;
+  }
+
+  .h-lg-300 {
+    height: 300px;
+  }
+
+  .h-lg-550 {
+    height: 550px;
+  }
+
+  /*chart box that has event*/
+  .chart_area_body.matching_height_lg {
+    min-height: 480px;
+  }
+
+  /*chart box that has event*/
+  .min-lg-160 {
+    min-height: 160px;
+  }
+
+  .min-lg-140 {
+    min-height: 140px;
+  }
+
+  .min-lg-120 {
+    min-height: 120px;
+  }
+
+  .min-lg-100 {
+    min-height: 100px;
+  }
+
+  .rounded-boxes.min-h-control-lg {
+    min-height: 90px;
+  }
+
+  .w-lg-250 {
+    width: 250px;
+  }
+
+  .border-right-lg {
+    border-right: 2px solid #d1d7dc;
+  }
+
+  .pl-lg-60 {
+    padding-left: 60px !important;
+  }
+
+  .pr-lg-60 {
+    padding-right: 60px !important;
+  }
+
+  .column-2 {
+    -moz-column-count: 2;
+    column-count: 2;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .column-3 {
+    -moz-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .padding-lg-y-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .min-w-lg-250px {
+    min-width: 250px;
+  }
+
+  .overflow-lg-hidden {
+    overflow: hidden;
+  }
+
+  /*new designs*/
+  .left_area {
+    flex-basis: calc(100% - 400px);
+    max-width: 940px;
+  }
+
+  .right_area {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 400px;
+    flex: 0 1 400px;
+    width: 400px;
+    max-width: 400px;
+  }
+
+  .sidebar_up {
+    margin-top: 3rem;
+  }
+
+  .course-content_new .content .week {
+    max-width: 100px;
+  }
+}
+
+@media screen and (min-device-width: 991px) and (max-device-width: 1024px) {
+  p-student .sidebar {
+    max-width: 300px;
+  }
+}
+
+/*remove some style not in use backup taken on local 23-09-2021*/
+@media only screen and (min-width: 768px) {
+
+  .two-column-list-md li,
+  .two-column-list-md .mathjax-container p {
+    width: 50%;
+    float: left;
+    padding-right: 8px;
+  }
+
+  .border-right-md {
+    border-right: 2px solid #d1d7dc;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .top_mobile_search input figure img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .card-common.products_slider .card-header-common .btn {
+    display: none;
+  }
+
+  /*box-area_new*/
+  .box-area_new {
+    /* margin: 20px 0 !important; */
+  }
+
+  /*box-area_new*/
+  .banner_new {
+    padding: 20px 0 !important;
+  }
+
+  .banner_new .banner-info h1,
+  .banner_new .banner_title {
+    font-size: 20px !important;
+    line-height: 22px !important;
+  }
+
+  .heading_new h3,
+  .heading-subheading h3 {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+  }
+
+  .course-inner_new h4,
+  .box-inner_new h4,
+  .info_new h4 {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+  }
+
+  .breadcrumbs_new h2,
+  .breadcrumbs_new h2:hover {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+  }
+
+  /*course details page*/
+  /*details top area*/
+  .course_details {
+    padding: 30px 0 !important;
+  }
+
+  .course_details .asses-info h3 {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .asses-right_new ul {
+    margin-left: 0 !important;
+  }
+
+  .asses-right_new ul li {
+    color: #000 !important;
+  }
+
+  /*remove background image styles 22-10-2021*/
+  /*details top area*/
+  .course-content_new .content .week {
+    text-align: left !important;
+  }
+
+  .course-content_new .content .week p,
+  .course-content_new .content .week .number,
+  .course-content_new .content .week span {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-weight: 700 !important;
+    display: inline-block !important;
+    vertical-align: middle;
+  }
+
+  .course-content_new h4 {
+    font-size: 14px !important;
+    line-height: 16px !important;
+  }
+
+  .asses-about-area_new .chapter-box {
+    padding: 0px;
+  }
+
+  /*course details page*/
+  .breadcrumbs_area {
+    margin: 30px 0;
+    top: unset !important;
+  }
+
+  .asses-about-area_new h3,
+  .asses-about-area_new .chapter-box h2 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+  }
+
+  /*take test*/
+  /*learning-test*/
+  .finish-btn {
+    /* top: 60px !important; */
+    top: 0px !important;
+  }
+
+  /*learning-test*/
+  /*chart boxes*/
+  .chart_area_body {
+    padding: 30px 10px;
+  }
+
+  .chart_boxes .filter-item {
+    position: absolute;
+    /* right: 15px;
+        top: 0px; */
+    right: 35px;
+    top: 15px;
+  }
+
+  /*chart boxes*/
+  /*just to overrite*/
+  .finish-btn.top-set {
+    top: 0 !important;
+    margin-top: 8px;
+  }
+
+  /*just to overrite*/
+  .error-analysis_new .accordation-area .accordion .area {
+    padding: 20px 0px 20px 0px;
+  }
+
+  .accordation-area.attemptSummary-vedio .heading.heading_new {
+    padding-left: 20px !important;
+  }
+
+  .accordation-area.attemptSummary-vedio .selection-padding-left45 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .vedio-section-box .vedio-name h3 {
+    padding: 10px 30px 10px 20px;
+  }
+
+  .vedio-section-box .vedio-body {
+    padding: 30px 20px;
+  }
+
+  .qqq {
+    padding-left: 75px;
+  }
+
+  .accordation-area.attemptSummary-vedio .selection {
+    padding-left: 75px;
+  }
+
+  .error-analysis_new .accordation-area .accordion .area .heading button::after {
+    right: -20px;
+  }
+
+  .error-analysis_new .number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+  }
+
+  /*footer*/
+  #page-wrapper {
+    min-height: calc(100vh - 177px);
+  }
+
+  footer.bg-primary {
+    text-align: center;
+  }
+
+  .loggedin footer.bg-primary {
+    padding-bottom: 70px !important;
+  }
+
+  /*footer*/
+  .footer_socials {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-md-block {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .dp-on_wall,
+  .pro-dp_wrap {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pro-dp-sideinfo,
+  .pro-dp-sideinfo_adjust {
+    text-align: center;
+  }
+
+  .pro-dp-sideinfo_adjust .form-row {
+    justify-content: center;
+  }
+
+  .owl-carousel .owl-prev,
+  .owl-carousel .owl-next {
+    display: none !important;
+  }
+
+  /*can move to another max width*/
+  /*error-analysis_new*/
+  /*two pages running from same*/
+  .error-analysis_new .overview-question-title {
+    padding-right: 0;
+  }
+
+  .error-analysis_new td:first-child {
+    min-width: 30px;
+    /*depends on first table td*/
+  }
+
+  .error-analysis_new td:nth-child(3),
+  .error-analysis_new td:nth-child(4) {
+    min-width: 80px;
+    padding: 0 5px !important;
+  }
+
+  .error-analysis_new .selection-wrap {
+    padding: 0 0 0 45px;
+    /*depends on first table td*/
+  }
+
+  .error-analysis_new .accordation-area .accordion .area {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  /*error-analysis_new*/
+  /*two pages running from same*/
+  /*can move to another max width*/
+  .chart_area_body.filter-via-select {
+    padding: 80px 10px 10px 10px;
+  }
+
+  .chart_boxes .user_img_circled_wrap {
+    width: 30px !important;
+    height: 30px !important;
+    flex: 0 0 30px;
+  }
+
+  .chart_boxes .avatar_wrapper,
+  .table-avatar .avatar_wrapper,
+  .chart_boxes .avatar,
+  .table-avatar .avatar {
+    width: 30px !important;
+    height: 30px !important;
+    flex: 0 0 30px !important;
+  }
+
+  .chart_boxes .chart_area_body .user-name {
+    max-width: 150px;
+    word-break: break-word;
+  }
+
+  .number-increment-box,
+  .score_wrap,
+  .time_wrap {
+    width: 30px;
+  }
+
+  .qqq {
+    padding-left: 65px;
+  }
+
+  .accordation-area.attemptSummary-vedio .selection {
+    padding-left: 65px;
+  }
+}

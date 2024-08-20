@@ -1,0 +1,17 @@
+.hide-carousel-arrows .carousel-control-prev,
+.hide-carousel-arrows .carousel-control-next,
+.hide-carousel-arrows .carousel-control-prev-icon,
+.hide-carousel-arrows .carousel-control-next-icon {
+  display: none !important;
+}
+.custom-progress-bar {
+  height: 5px; /* Set the desired height */
+}
+.image-container {
+  height: 141px; /* Set the desired height */
+  display: flex;
+}
+
+.image-container img {
+  width: 100%;
+}

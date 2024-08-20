@@ -1,0 +1,66 @@
+:root {
+  --white: #FFFFFF;
+  --black: #121212;
+  --green: #218739;
+  --red: #dc3545;
+  --primary: #0071EB;
+  --primary-emphasis: #005EC2;
+  --secondary: #6C757D;
+  --success: #218739;
+  --success-emphasis: #1B6F2E;
+  --danger: #dc3545;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+/* overwrite boostrap color */
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-emphasis);
+  color: var(--white);
+  border-color: var(--primary-emphasis);
+}
+
+.btn-success {
+  background-color: var(--success);
+  color: var(--white);
+  border-color: var(--success);
+}
+
+.btn-success:hover {
+  background-color: var(--success-emphasis);
+  color: var(--white);
+  border-color: var(--success-emphasis);
+}
+
+.color-primary-emphasis {
+  color: var(--primary-emphasis)
+}
+
+.btn-outline,
+.btn-outline:hover {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-black {
+  border: 1px solid #000 !important;
+  color: #000;
+}
+
+.btn-outline-white {
+  border: 1px solid #fff !important;
+  color: #fff !important;
+}

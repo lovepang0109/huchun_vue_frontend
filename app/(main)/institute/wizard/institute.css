@@ -1,0 +1,32 @@
+.active {
+  /* background-color: #6fe060; */
+  /* color: white; */
+}
+
+.disabled {
+  background-color: gray;
+  color: white;
+}
+
+.mentor-homepage-profile .login-area form {
+  max-width: unset;
+  box-shadow: unset;
+  margin-left: unset;
+}
+
+.mentor-homepage-profile .login-area form .form-group {
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+
+.mentor-homepage-profile .login-area form label {
+  font-size: 12px;
+  color: #000;
+}
+
+.mentor-homepage-profile .login-area form input {
+  /* background: #f5f6f7; */
+  border: 1px solid #ccd0d5;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

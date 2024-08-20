@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'icomoon1';
+  src: url('/../assets/fonts/icomoon1.eot?c9ekke');
+  src: url('./../assets/fonts/icomoon1.eot?c9ekke#iefix') format('embedded-opentype'),
+    url('./../assets/fonts/icomoon1.ttf?c9ekke') format('truetype'),
+    url('./../assets/fonts/icomoon1.woff?c9ekke') format('woff'),
+    url('./../assets/fonts/icomoon1.svg?c9ekke#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="iconc-"],
+[class*=" iconc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon1' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.iconc-content:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e914";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.iconc-video:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e902";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.iconc-assesment:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e914";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.iconc-ebook:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e914";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.iconc-quiz:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e908";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.iconc-onlineSession:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e912";
+  margin-left: -1em;
+  color: #00E4D5;
+}
+
+.iconc-content-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e914";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.iconc-video-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e902";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.iconc-assesment-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e914";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.iconc-ebook-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e914";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.iconc-quiz-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e908";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.iconc-onlineSession-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e912";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+@font-face {
+  font-family: 'icomoon3';
+  src: url('./../assets/fonts/icomoon3.eot?vmxo8t');
+  src: url('./../assets/fonts/icomoon3.eot?vmxo8t#iefix') format('embedded-opentype'),
+    url('./../assets/fonts/icomoon3.ttf?vmxo8t') format('truetype'),
+    url('./../assets/fonts/icomoon3.woff?vmxo8t') format('woff'),
+    url('./../assets/fonts/icomoon3.svg?vmxo8t#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon3-"],
+[class*=" icon3-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon3' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon3-onlineSession:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e900";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.icon3-assesment:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e901";
+  margin-left: -1em;
+  color: #3ced15;
+}
+
+.icon3-onlineSession-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e900";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.icon3-assesment-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e901";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.icon3-ebook-lock:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e902";
+  margin-left: -1em;
+  color: #5D5D5D;
+}
+
+.icon3-ebook:before {
+  font-weight: 1000;
+  font-size: 16px;
+  content: "\e902";
+  margin-left: -1em;
+  color: #3ced15;
+}

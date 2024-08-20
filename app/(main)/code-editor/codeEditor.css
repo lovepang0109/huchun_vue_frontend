@@ -1,0 +1,105 @@
+.code-area {
+  height: calc(100vh - 225px);
+  background: #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.code-area .inner,
+.code-area .inner-editor {
+  border: 1px solid #d3dce6;
+  box-sizing: border-box;
+}
+
+.code-editor .code-area .admin-head {
+  font-size: 20px;
+  margin-top: 5px;
+  color: black;
+}
+
+.code-editor.dark-mode .code-area .inner,
+.code-editor.dark-mode .code-area .inner-editor {
+  background: #1c2130;
+  border: 1px solid #606266;
+}
+
+.dark-mode .bg-light {
+  background: #445178 !important;
+}
+
+.dark-mode .code-snippet-panel svg {
+  background-color: #a7e2f2;
+}
+
+.code-editor.dark-mode .code-area .admin-head {
+  color: white;
+}
+
+.code-editor.dark-mode .code-area .admin-head::placeholder {
+  color: #ccc;
+}
+
+.code-editor.dark-mode .code-area .txt-arguments {
+  color: white;
+}
+
+.code-editor .code-area .inner-editor .terminal.xterm .xterm-viewport {
+  overflow-y: auto;
+}
+
+.code-editor.dark-mode .code-area .inner-editor,
+.code-editor.dark-mode .code-area .inner-editor > textarea {
+  background: rgb(39, 40, 34);
+  color: white !important;
+}
+
+.code-editor.dark-mode .code-area .inner-editor,
+.code-editor.dark-mode .code-area .inner-editor .xterm-rows {
+  color: white !important;
+}
+.xterm-helpers textarea {
+  position: relative !important;
+}
+
+.code-area.vertical {
+  height: calc(50vh - 125px);
+}
+
+.inner-editor .CodeMirror {
+  height: calc(100vh - 255px);
+}
+
+.code-area.vertical .inner-editor .CodeMirror {
+  height: calc(50vh - 150px);
+}
+/* .inner-editor {
+  background-color: white;
+} */
+
+.inner-editor > div {
+  height: 100vh;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+.code-area.vertical .inner-editor > div {
+  height: calc(50vh - 150px);
+}
+.lang-label {
+  font-weight: 700;
+  font-size: 14px;
+}
+.cm-editor {
+  height: 100% !important;
+}
+.terminal .xterm {
+  display: none;
+}
+
+/* .xterm-helpers {
+  display: none;
+} */
+/* 
+ .xterm-helper-textarea {
+  display: none;
+}  */

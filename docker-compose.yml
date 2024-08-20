@@ -1,0 +1,12 @@
+version: "2.1"
+services:
+  webreact:
+    build:
+      context: /opt/data/webreact
+    ports:
+      - "9040:3000"
+    environment:
+      - NODE_ENV=test
+      - PORT=3000
+    container_name: webreact
+    restart: unless-stopped

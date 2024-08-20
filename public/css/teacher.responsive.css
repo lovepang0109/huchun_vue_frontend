@@ -1,0 +1,863 @@
+@media screen and (max-width: 1919px) {
+  .course-summery {
+    max-width: 1306px;
+  }
+
+  .course-curriculum-area .title {
+    margin-bottom: 30px;
+  }
+
+  .course-curriculum-area .title h4 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .add-new-section {
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+
+  .add-new-section a {
+    padding: 0 20px;
+  }
+
+  .course-curriculum-duration span {
+    font-size: 75px;
+    line-height: 50px;
+  }
+
+  .course-curriculum-duration p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .course-curriculum-info h4 {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+
+  .course-curriculum-info p {
+    font-size: 14px;
+  }
+
+  .course-curriculum-info .bottom {
+    margin-top: 40px;
+  }
+
+  .course-curriculum-info .bottom a {
+    /* font-size: 16px;
+        line-height: 20px; */
+  }
+
+  /* .course-curriculum-info .material-icons {
+        font-size: 50px;
+    } */
+  .course-curriculum-info .expand-more {
+    /* width: 50px;
+        height: 50px; */
+  }
+
+  .course-curriculum-info .expand-less {
+    /* width: 50px;
+        height: 50px; */
+  }
+
+  .course-curriculum-info .expand-less .material-icons {
+    /* font-size: 25px; */
+  }
+
+  .curriculum-content-accordion ul li {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 15px 15px;
+  }
+
+  .header-area {
+    /* max-width: 1320px; */
+  }
+
+  .course-setting-area .publish-btn {
+    min-width: 133px;
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 35px;
+  }
+
+  .course-setting-area .save-changes-btn {
+    min-width: 165px;
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 35px;
+  }
+
+  .course-setting-area .delete-btn {
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+  }
+
+  .course-setting-area .widthdraw-btn {
+    min-width: 133px;
+    font-size: 18px;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 35px;
+  }
+
+  .course-curriculum-area .title .cancel {
+    font-size: 18px;
+    line-height: 43px;
+    height: 43px;
+  }
+
+  .course-curriculum-area .title .delete {
+    font-size: 18px;
+    line-height: 43px;
+    height: 43px;
+    margin-left: 25px;
+  }
+
+  .course-curriculum-area .title .add {
+    font-size: 18px;
+    line-height: 43px;
+    height: 43px;
+    margin-left: 25px;
+  }
+
+  .course-setting-box label {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 20px 0;
+  }
+
+  .course-setting-box .radio label {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .course-summery-info h3 {
+    font-size: 24px;
+    line-height: 23px;
+    margin-bottom: 14px;
+  }
+
+  .course-summery-info p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .course-summery-slider h3 {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 36px;
+  }
+
+  .course-summery-info {
+    /* margin-bottom: 70px; */
+  }
+
+  .course-summery .sidebar ul li {
+    /* font-size: 16px;
+        line-height: 33px; */
+  }
+
+  .course-summery-area {
+    padding: 30px 25px 0px 25px;
+  }
+
+  .course-summery-area .item .inner {
+    margin-bottom: 20px;
+  }
+
+  .course-summery-area .item .inner h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .course-summery-area .item .inner p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .course-summery-wrap {
+    max-width: 1030px;
+  }
+
+  .course-setting-area {
+    /* padding: 50px 0 !important; */
+  }
+
+  .course-setting-area {
+    /* max-width: 1024px; */
+  }
+
+  .course-curriculum-area {
+    /* max-width: 1024px; */
+  }
+
+  .course-curriculum-area .title .add a {
+    padding: 0 30px;
+  }
+
+  .course-curriculum-addsection button {
+    min-width: 100px;
+    height: 43px;
+    font-size: 18px;
+    line-height: 43px;
+  }
+
+  .course-curriculum-addsection button.red {
+    margin: 0 20px;
+    right: 125px;
+  }
+
+  .course-curriculum-addsection .bottom-area .cancel-top {
+    font-size: 18px;
+    line-height: 43px;
+    margin: 0 20px;
+  }
+
+  .course-curriculum-addsection h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .course-curriculum-addsection .top-area p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .course-curriculum-addsection .bottom-area .mathjax-container {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .course-curriculum-addsection .top-area p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .course-setting-box .tab-item h5 {
+    /* font-size: 18px;
+		line-height: 20px; */
+  }
+
+  .course-setting-box .tab-item img {
+    max-width: 35px;
+  }
+
+  .view-note form label {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .view-note form .form-group input {
+    /* font-size: 18px;
+        padding: 20px 67px 20px 25px; */
+  }
+
+  .view-note form .form-group input::placeholder {
+    /* font-size: 18px; */
+  }
+
+  .view-note form .form-group {
+    margin-bottom: 25px;
+  }
+
+  .view-note ul {
+    /* margin-top: 15px; */
+  }
+
+  .view-note ul li {
+    font-size: 18px;
+  }
+
+  .course-curriculum-area .title h4 {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .view-quiz .title .btn-area ul li {
+    font-size: 18px;
+    line-height: 38px;
+  }
+
+  .view-quiz .title .btn-area ul li.add-quiz {
+    font-size: 18px;
+    height: 38px;
+    line-height: 38px;
+  }
+
+  .search-bar form input {
+    /* font-size: 18px; */
+  }
+
+  .view-quiz .search-bar input::placeholder {
+    /* font-size: 18px; */
+  }
+
+  .assess-box h4 {
+    /* font-size: 16px;
+        line-height: 20px; */
+  }
+
+  .assess-box .item span {
+    /* font-size: 22px;
+        line-height: 27px; */
+  }
+
+  .assess-box button {
+    /* font-size: 16px;
+        height: 45px;
+        line-height: 45px; */
+  }
+
+  .attachment .analytics-tab>ul li {
+    /* font-size: 18px;
+        line-height: 20px; */
+  }
+
+  .library-content .title .btn-area ul li {
+    /* font-size: 18px;
+        line-height: 40px;
+        height: 40px;
+        margin-left: 30px; */
+  }
+
+  .library-content .bottom h4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .library-content form input {
+    /* font-size: 18px;
+        height: calc(2em + 1rem + 2px); */
+  }
+
+  .library-content form input::placeholder {
+    /* font-size: 18px; */
+  }
+
+  .library-content form span {
+    height: 35px;
+    line-height: 35px;
+  }
+
+  .course-summery-area .item h4 {
+    /* margin-bottom: 14px; */
+  }
+
+  .course-summery-area .profile-item-inner {
+    width: 60%;
+    padding: 4px 5px 6px 0;
+  }
+
+  .course-summery-area .profile-item-inner figure {
+    width: 40px;
+    height: 40px;
+  }
+
+  .course-summery-area .profile-item-inner .profile-name {
+    width: 63%;
+    padding: 7px 0 0 10px;
+  }
+
+  .course-summery-area .profile-item .massage-btn {
+    margin-top: 10px;
+    height: 36px;
+    line-height: 36px;
+    min-width: 73px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+  }
+
+  .course-summery-area .item h5 {
+    font-size: 13px;
+  }
+
+  .course-summery-area .item.credt h5 {
+    font-size: 15px;
+  }
+
+  .course-summery-area .profile-item {
+    margin-bottom: 10px;
+  }
+
+  .course-summery-area .item {
+    padding: 18px 20px 12px 20px;
+    margin-bottom: 25px;
+  }
+
+  .course-summery-area .profile-item .massage-btn {
+    margin-top: 5px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 11px;
+  }
+
+  .course-summery-area .item.credt {
+    padding: 11px 20px 11px 20px;
+  }
+
+  .content-item-inner .head-title h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .content-item-top {
+    margin-bottom: 0;
+  }
+
+  .library-content .load-more {
+    max-width: 240px;
+    margin-top: 40px;
+    height: 66px;
+    line-height: 66px;
+    font-size: 20px;
+    color: #000;
+  }
+
+  .library-content .content-item ul li {
+    margin-right: 7px;
+    margin-top: 8px;
+    font-size: 11px;
+    line-height: 25px;
+    padding: 0 7px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .course-summery {
+    max-width: 1174px;
+  }
+
+  .course-curriculum-area .title h4 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .add-new-section {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 21px;
+  }
+
+  .course-curriculum-duration p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .course-curriculum-info .bottom {
+    margin-top: 30px;
+  }
+
+  .course-curriculum-info .bottom a {
+    /* font-size: 14px;
+        line-height: 18px; */
+  }
+
+  /* .course-curriculum-info .material-icons {
+        font-size: 40px;
+    } */
+  .course-curriculum-info .expand-more {
+    /* width: 30px;
+        height: 30px;
+        right: 14px; */
+  }
+
+  .course-curriculum-info .expand-less {
+    /* width: 30px;
+        height: 25px; */
+  }
+
+  .curriculum-content-accordion ul li {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .course-curriculum-item {
+    padding: 30px 40px 30px 50px;
+  }
+
+  .course-curriculum-item {
+    padding: 30px 50px 30px 50px;
+  }
+
+  .course-curriculum-info h4 {
+    margin-bottom: 10px;
+  }
+
+  .header-area {
+    /* max-width: 1290px; */
+  }
+
+  .course-setting-area .publish-btn {
+    min-width: 119px;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 20px;
+  }
+
+  .course-setting-area .widthdraw-btn {
+    min-width: 119px;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 20px;
+  }
+
+  .course-setting-area .save-changes-btn {
+    min-width: 150px;
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    margin-left: 20px;
+  }
+
+  .course-curriculum-area .title .cancel {
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+  }
+
+  .course-curriculum-area .title .delete {
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    margin-left: 21px;
+  }
+
+  .course-curriculum-area .title .add {
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    margin-left: 21px;
+  }
+
+  .course-setting-box label {
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+  }
+
+  .course-setting-box .radio label {
+    font-size: 14px;
+  }
+
+  .course-setting-box form input {
+    /* font-size: 16px; */
+  }
+
+  .course-setting-box form input::placeholder {
+    /* font-size: 16px; */
+  }
+
+  .course-summery-slider h3 {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+  }
+
+  .course-curriculum-info h4 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .course-summery-area .item {
+    padding: 20px 15px 10px 15px;
+    margin-bottom: 20px;
+  }
+
+  .course-curriculum-area {
+    /* padding: 45px 0; */
+  }
+
+  .course-summery .sidebar ul li {
+    /* font-size: 14px; */
+  }
+
+  .course-summery {
+    /* max-width: 1175px; */
+  }
+
+  .course-setting-area {
+    /* padding: 45px 0 !important; */
+  }
+
+  .course-summery-area {
+    /* max-width: 970px; */
+  }
+
+  .course-summery-wrap {
+    /* max-width: 900px; */
+  }
+
+  .course-curriculum-area .title .add a {
+    padding: 0 25px;
+  }
+
+  .course-curriculum-addsection button {
+    min-width: 90px;
+    height: 38px;
+    font-size: 16px;
+    line-height: 38px;
+  }
+
+  .course-curriculum-addsection .bottom-area .cancel-top {
+    font-size: 16px;
+    line-height: 38px;
+    margin: 0 20px;
+  }
+
+  .course-curriculum-addsection h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .course-curriculum-addsection .top-area p {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .course-curriculum-addsection .bottom-area .mathjax-container {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .course-curriculum-addsection .top-area p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .course-setting-area {
+    /* max-width: 950px; */
+  }
+
+  .course-curriculum-area {
+    /* max-width: 950px; */
+  }
+
+  .course-summery-wrap {
+    /* max-width: 885px; */
+  }
+
+  .course-setting-box .tab-item h5 {
+    /* font-size: 16px;
+		line-height: 18px; */
+  }
+
+  .course-setting-box .tab-item img {
+    max-width: 32px;
+  }
+
+  .course-setting-box .tab-item a.active {
+    border-bottom: 4px solid #7572FE;
+  }
+
+  .view-note form label {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .view-note form .form-group input {
+    /* font-size: 16px; */
+  }
+
+  .view-note form .form-group input::placeholder {
+    /* font-size: 16px; */
+  }
+
+  .view-note form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .view-note ul {
+    margin-top: 10px;
+  }
+
+  .view-note ul li {
+    font-size: 16px;
+  }
+
+  .view-quiz .title .btn-area ul li {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .view-quiz .title .btn-area ul li.add-quiz {
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .search-bar form input {
+    /* font-size: 16px; */
+  }
+
+  .view-quiz .search-bar figure {
+    /* width: 20px; */
+  }
+
+  .view-quiz .search-bar input {
+    /* padding: 0 25px 0 44px; */
+  }
+
+  .view-quiz .search-bar input::placeholder {
+    /* font-size: 16px; */
+  }
+
+  .assess-box h4 {
+    /* font-size: 14px;
+        line-height: 18px; */
+  }
+
+  .assess-box .item span {
+    /* font-size: 20px;
+        line-height: 25px; */
+  }
+
+  .assess-box ul li {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .assess-box button {
+    /* font-size: 14px;
+        height: 40px;
+        line-height: 40px; */
+  }
+
+  .attachment .analytics-tab>ul li {
+    /* font-size: 16px;
+        line-height: 20px; */
+  }
+
+  .library-content .title h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .library-content .title .btn-area ul li {
+    font-size: 16px;
+    line-height: 36px;
+    height: 36px;
+  }
+
+  .library-content form input {
+    /* font-size: 16px;
+        height: calc(1.75em + 1rem + 2px); */
+  }
+
+  .library-content form input::placeholder {
+    /* font-size: 16px; */
+  }
+
+  .library-content form span {
+    /* height: 30px;
+        line-height: 30px; */
+  }
+
+  .profile-item {
+    margin-bottom: 5px;
+  }
+
+  .course-summery-area .item h4 {
+    /* margin-bottom: 12px; */
+  }
+
+  .course-summery-area .item h5 {
+    font-size: 13.33px;
+  }
+
+  .course-summery-area .item h4 {
+    /* font-size: 14px; */
+  }
+
+  .library-content .answer-box label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .course-summery-area .profile-item .massage-btn {
+    height: 32px;
+    line-height: 32px;
+    min-width: 65px;
+    font-size: 10.5px;
+  }
+
+  .course-summery-info p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .course-setting-area .delete-btn {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
+    min-width: 60px;
+  }
+
+  .view-note form .form-group {
+    margin-bottom: 10px;
+  }
+
+  .content-item-inner .head-title h4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .library-content .load-more {
+    max-width: 200px;
+    margin-top: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .course-summery-area .profile-item-inner figure {
+    width: 30px;
+    height: 30px;
+  }
+
+  .course-summery-area .profile-item .massage-btn {
+    height: 30px;
+    line-height: 30px;
+    min-width: 58px;
+    font-size: 9px;
+  }
+
+  .course-summery-area .item h5 {
+    font-size: 11.33px;
+    line-height: 13px;
+  }
+
+  .asses-right ul {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .video-frame iframe {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  .course-summery-area .item {
+    max-width: 100%;
+  }
+
+  .course-summery-slider {
+    max-width: 615px;
+  }
+}

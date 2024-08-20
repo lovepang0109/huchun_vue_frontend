@@ -1,0 +1,9 @@
+.image-container {
+  height: 300px; /* Set the desired height */
+  display: flex;
+  align-items: center;
+}
+.image-container img {
+  height: 100%;
+  width: auto;
+}

@@ -1,0 +1,22 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 56%;
+}
+
+.image-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image1 {
+  z-index: 1;
+}
+
+.image2 {
+  z-index: 2;
+}

@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* font2 */
+
+@font-face {
+    font-family: "Hindi";
+    src:url("k010.eot");
+    src:url("k010.eot?#iefix") format("embedded-opentype"),
+        url("k010.woff") format("woff"),
+        url("k010.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DevLys";
+    src:  url('DevLys-010.ttf.woff') format('woff'),
+    url('DevLys-010.ttf.svg#DevLys-010') format('svg'),
+    url('DevLys-010.ttf.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Walkman-Chanakya-905';
+    src:  url('Walkman-Chanakya905Normal.woff') format('woff'),
+        url('Walkman-Chanakya905Normal.eot'),
+        url("Walkman-Chanakya905Normal.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Walkman-Chanakya-905';
+    src:  url('Walkman-Chanakya905Bold.woff') format('woff'),
+        url('Walkman-Chanakya905Bold.eot'),
+        url("Walkman-Chanakya905Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+/*body{ background : #3F3C4C}*/
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_8705">Text with this font applied</p> */
